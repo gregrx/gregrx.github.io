@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "concurrently \"npm run sync\"",
-    "sync": "browser-sync start --watch --files=\"./**/*.html,./**/*.css,./**/*.js,.\" -s"
+    "start": "concurrently \"npm run sync\" \"npm run tailwind\"",
+    "sync": "browser-sync start --watch --files=\"./**/*.html,./**/*.css,./**/*.js,.\" -s",
+    "tailwind": "npx tailwindcss -i ./css/style.css -o ./css/outofstyle.css --watch"
   },
   "keywords": [],
   "main": "main.js",
@@ -12,5 +13,7 @@
   "dependencies": {
     "alpinejs": "^3.13.2"
   },
-  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  }
 }
