@@ -1,0 +1,21 @@
+{
+  "name": "ddlearn",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "concurrently \"npm run sync\" \"npm run tailwind\"",
+    "sync": "browser-sync start --watch --files=\"./**/*.html,./**/*.css,./**/*.js,.\" -s",
+    "tailwind": "npx tailwindcss -i ./css/style.css -o ./css/outofstyle.css --watch"
+  },
+  "keywords": [],
+  "main": "main.js",
+  "license": "MIT",
+  "dependencies": {
+    "alpinejs": "^3.13.2",
+    "sass": "^1.77.8",
+    "scss": "^0.2.4"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  }
+}
