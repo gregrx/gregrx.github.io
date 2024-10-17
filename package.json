@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "gregrx",
+=======
+  "name": "8-9-0",
+>>>>>>> a49743a4fb26dd04c268fb46f78e2310e614f864
   "version": "1.0.0",
   "description": "",
   "scripts": {
