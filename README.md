@@ -1,2 +1,0 @@
-# gregrx
-my personal page 
