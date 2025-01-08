@@ -3,20 +3,17 @@
     "version": "0.1",
     "description": "",
     "scripts": {
-      "start": "concurrently \"npm run sync\" \"npm run tailwind\"",
-      "sync": "browser-sync start --watch --files=\"./**/*.html,./**/*.css,./**/*.js,.\" -s",
-      "tailwind": "npx tailwindcss -i ./css/style.css -o ./css/t-style.css --watch"
+        "start": "concurrently \"npm run sync\" \"npm run sass\"",
+        "sync": "browser-sync start --watch --files=\"./**/*.html,./**/*.css,./**/*.js,.\" -s",
+        "sass": "node-sass ./scss/more.scss ./css/more.css"
     },
     "keywords": [],
     "main": "main.js",
     "license": "MIT",
     "dependencies": {
-      "alpinejs": "^3.13.2",
-      "sass": "^1.77.8",
-      "scss": "^0.2.4"
-    },
-    "devDependencies": {
-      "tailwindcss": "^3.4.4"
+        "node-sass": "^9.0.0",
+        "pug": "^3.0.3",
+        "sass": "^1.77.8",
+        "scss": "^0.2.4"
     }
-  }
-  
+}
