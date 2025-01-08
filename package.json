@@ -5,7 +5,7 @@
     "scripts": {
         "start": "concurrently \"npm run sync\" \"npm run sass\"",
         "sync": "browser-sync start --watch --files=\"./**/*.html,./**/*.css,./**/*.js,.\" -s",
-        "sass": "node-sass ./scss/more.scss ./css/more.css"
+        "sass": "node-sass --watch ./scss/more.scss ./css/more.css"
     },
     "keywords": [],
     "main": "main.js",
