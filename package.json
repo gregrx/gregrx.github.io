@@ -3,16 +3,10 @@
     "version": "0.1",
     "description": "",
     "scripts": {
-        "start": "concurrently \"npm run sync\" \"npm run sass\"",
-        "sync": "browser-sync start --watch --files=\"./**/*.html,./**/*.css,./**/*.js,.\" -s",
-        "sass": "node-sass --watch ./scss/more.scss ./css/more.css"
+        "start": "concurrently \"npm run sync\"",
+        "sync": "browser-sync start --watch --files=\"./**/*.html,./**/*.css,./**/*.js,.\" -s"
     },
     "keywords": [],
     "main": "main.js",
-    "dependencies": {
-        "node-sass": "^9.0.0",
-        "pug": "^3.0.3",
-        "sass": "^1.77.8",
-        "scss": "^0.2.4"
-    }
+    "dependencies": {}
 }
